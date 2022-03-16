@@ -17,12 +17,33 @@ import java.util.List;
  * @date 2022/03/13 16:45
  * @since 1.0
  */
-public class CodeGenerator {
+public class CodeGeneratorApplication {
 
 	public static void main(String[] args) {
 
 		List<String> tables = new ArrayList<>();
 		tables.add("t_admin");
+		tables.add("t_admin_role");
+		tables.add("t_appraise");
+		tables.add("t_department");
+		tables.add("t_employee");
+		tables.add("t_employee_ec");
+		tables.add("t_employee_remove");
+		tables.add("t_employee_train");
+		tables.add("t_joblevel");
+		tables.add("t_mail_log");
+		tables.add("t_menu");
+		tables.add("t_menu_role");
+		tables.add("t_nation");
+		tables.add("t_oplog");
+		tables.add("t_politics_status");
+		tables.add("t_position");
+		tables.add("t_role");
+		tables.add("t_salary");
+		tables.add("t_salary_adjust");
+		tables.add("t_sys_msg");
+		tables.add("t_sys_msg_content");
+
 		// 项目路径
 		String projectPath = System.getProperty("user.dir");
 
@@ -70,10 +91,6 @@ public class CodeGenerator {
 							.columnNaming(NamingStrategy.no_change)
 							// 开启lombok模型
 							.enableLombok()
-							// 逻辑删除字段名
-							.logicDeleteColumnName("deleted")
-							// 开启生成实体时生成字段注解
-							.enableTableFieldAnnotation()
 							// controller策略设置
 							.controllerBuilder()
 							.formatFileName("%sController")
@@ -83,6 +100,7 @@ public class CodeGenerator {
 							.mapperBuilder()
 							// 生成通用的resultMap
 							.enableBaseResultMap()
+							.enableBaseColumnList()
 							.superClass(BaseMapper.class)
 							.formatMapperFileName("%sMapper")
 							.enableMapperAnnotation()
