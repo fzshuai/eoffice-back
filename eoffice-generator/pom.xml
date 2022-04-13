@@ -30,7 +30,7 @@
             <artifactId>mybatis-plus-generator</artifactId>
             <version>3.5.1</version>
         </dependency>
-        <!-- velocity模板 -->
+        <!-- velocity -->
         <dependency>
             <groupId>org.apache.velocity</groupId>
             <artifactId>velocity-engine-core</artifactId>

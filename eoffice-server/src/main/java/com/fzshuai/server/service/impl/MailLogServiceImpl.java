@@ -1,9 +1,9 @@
 package com.fzshuai.server.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.fzshuai.generator.mapper.MailLogMapper;
-import com.fzshuai.generator.pojo.MailLog;
-import com.fzshuai.generator.service.MailLogService;
+import com.fzshuai.server.mapper.MailLogMapper;
+import com.fzshuai.server.entity.MailLog;
+import com.fzshuai.server.service.IMailLogService;
 import org.springframework.stereotype.Service;
 
 /**
@@ -15,6 +15,6 @@ import org.springframework.stereotype.Service;
  * @since 2022/03/14 13:43
  */
 @Service
-public class MailLogServiceImpl extends ServiceImpl<MailLogMapper, MailLog> implements MailLogService {
+public class MailLogServiceImpl extends ServiceImpl<MailLogMapper, MailLog> implements IMailLogService {
 
 }

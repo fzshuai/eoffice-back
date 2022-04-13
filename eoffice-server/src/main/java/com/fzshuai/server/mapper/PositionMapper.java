@@ -1,7 +1,7 @@
 package com.fzshuai.server.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.fzshuai.server.pojo.Position;
+import com.fzshuai.server.entity.Position;
 import org.apache.ibatis.annotations.Mapper;
 
 /**

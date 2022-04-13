@@ -1,8 +1,11 @@
 package com.fzshuai.server.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.fzshuai.server.pojo.Admin;
+import com.fzshuai.server.entity.Admin;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 /**
  * <p>
@@ -15,4 +18,11 @@ import org.apache.ibatis.annotations.Mapper;
 @Mapper
 public interface AdminMapper extends BaseMapper<Admin> {
 
+    /**
+     * 获取所有操作员
+     * @param id
+     * @param keywords
+     * @return
+     */
+    List<Admin> getAllAdmins(@Param("id") Integer id, @Param("keywords") String keywords);
 }

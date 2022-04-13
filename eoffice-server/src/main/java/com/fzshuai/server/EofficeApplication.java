@@ -3,6 +3,7 @@ package com.fzshuai.server;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
 /**
  * 启动类
@@ -12,7 +13,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @since 1.0
  */
 @SpringBootApplication
-@MapperScan("com.fzshuai.server.mapper")
+@EnableScheduling
 public class EofficeApplication {
 
     public static void main(String[] args) {

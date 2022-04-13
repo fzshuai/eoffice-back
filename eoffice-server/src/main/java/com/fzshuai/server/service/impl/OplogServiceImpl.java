@@ -1,9 +1,9 @@
 package com.fzshuai.server.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.fzshuai.generator.mapper.OplogMapper;
-import com.fzshuai.generator.pojo.Oplog;
-import com.fzshuai.generator.service.OplogService;
+import com.fzshuai.server.mapper.OplogMapper;
+import com.fzshuai.server.entity.Oplog;
+import com.fzshuai.server.service.IOplogService;
 import org.springframework.stereotype.Service;
 
 /**
@@ -15,6 +15,6 @@ import org.springframework.stereotype.Service;
  * @since 2022/03/14 13:43
  */
 @Service
-public class OplogServiceImpl extends ServiceImpl<OplogMapper, Oplog> implements OplogService {
+public class OplogServiceImpl extends ServiceImpl<OplogMapper, Oplog> implements IOplogService {
 
 }

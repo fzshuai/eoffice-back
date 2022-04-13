@@ -1,7 +1,7 @@
 package com.fzshuai.server.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.fzshuai.generator.pojo.SysMsg;
+import com.fzshuai.server.entity.SysMsg;
 import org.apache.ibatis.annotations.Mapper;
 
 /**

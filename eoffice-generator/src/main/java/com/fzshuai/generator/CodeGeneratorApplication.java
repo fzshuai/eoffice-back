@@ -67,7 +67,7 @@ public class CodeGeneratorApplication {
 				.packageConfig(builder -> {
 					builder.parent("com.fzshuai")
 							.moduleName("generator")
-							.entity("pojo")
+							.entity("entity")
 							.service("service")
 							.serviceImpl("service.impl")
 							.controller("controller")

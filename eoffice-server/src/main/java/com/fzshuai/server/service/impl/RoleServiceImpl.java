@@ -1,9 +1,9 @@
 package com.fzshuai.server.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.fzshuai.generator.mapper.RoleMapper;
-import com.fzshuai.generator.pojo.Role;
-import com.fzshuai.generator.service.RoleService;
+import com.fzshuai.server.mapper.RoleMapper;
+import com.fzshuai.server.entity.Role;
+import com.fzshuai.server.service.IRoleService;
 import org.springframework.stereotype.Service;
 
 /**
@@ -15,6 +15,6 @@ import org.springframework.stereotype.Service;
  * @since 2022/03/14 13:43
  */
 @Service
-public class RoleServiceImpl extends ServiceImpl<RoleMapper, Role> implements RoleService {
+public class RoleServiceImpl extends ServiceImpl<RoleMapper, Role> implements IRoleService {
 
 }

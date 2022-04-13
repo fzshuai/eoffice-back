@@ -1,7 +1,7 @@
 package com.fzshuai.server.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.fzshuai.server.pojo.PoliticsStatus;
+import com.fzshuai.server.entity.PoliticsStatus;
 import org.apache.ibatis.annotations.Mapper;
 
 /**

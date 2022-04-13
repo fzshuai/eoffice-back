@@ -1,9 +1,9 @@
 package com.fzshuai.server.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.fzshuai.generator.mapper.JoblevelMapper;
-import com.fzshuai.generator.pojo.Joblevel;
-import com.fzshuai.generator.service.JoblevelService;
+import com.fzshuai.server.mapper.JoblevelMapper;
+import com.fzshuai.server.entity.Joblevel;
+import com.fzshuai.server.service.IJoblevelService;
 import org.springframework.stereotype.Service;
 
 /**
@@ -15,6 +15,6 @@ import org.springframework.stereotype.Service;
  * @since 2022/03/14 13:43
  */
 @Service
-public class JoblevelServiceImpl extends ServiceImpl<JoblevelMapper, Joblevel> implements JoblevelService {
+public class JoblevelServiceImpl extends ServiceImpl<JoblevelMapper, Joblevel> implements IJoblevelService {
 
 }

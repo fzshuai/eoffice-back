@@ -1,9 +1,9 @@
 package com.fzshuai.server.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.fzshuai.generator.mapper.AppraiseMapper;
-import com.fzshuai.generator.pojo.Appraise;
-import com.fzshuai.generator.service.AppraiseService;
+import com.fzshuai.server.mapper.AppraiseMapper;
+import com.fzshuai.server.entity.Appraise;
+import com.fzshuai.server.service.IAppraiseService;
 import org.springframework.stereotype.Service;
 
 /**
@@ -15,6 +15,6 @@ import org.springframework.stereotype.Service;
  * @since 2022/03/14 13:43
  */
 @Service
-public class AppraiseServiceImpl extends ServiceImpl<AppraiseMapper, Appraise> implements AppraiseService {
+public class AppraiseServiceImpl extends ServiceImpl<AppraiseMapper, Appraise> implements IAppraiseService {
 
 }

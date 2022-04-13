@@ -1,7 +1,7 @@
 package com.fzshuai.server.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.fzshuai.server.pojo.Joblevel;
+import com.fzshuai.server.entity.Joblevel;
 import org.apache.ibatis.annotations.Mapper;
 
 /**

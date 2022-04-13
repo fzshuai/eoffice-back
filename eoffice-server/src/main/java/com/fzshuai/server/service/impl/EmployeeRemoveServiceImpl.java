@@ -1,9 +1,9 @@
 package com.fzshuai.server.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.fzshuai.generator.mapper.EmployeeRemoveMapper;
-import com.fzshuai.generator.pojo.EmployeeRemove;
-import com.fzshuai.generator.service.EmployeeRemoveService;
+import com.fzshuai.server.mapper.EmployeeRemoveMapper;
+import com.fzshuai.server.entity.EmployeeRemove;
+import com.fzshuai.server.service.IEmployeeRemoveService;
 import org.springframework.stereotype.Service;
 
 /**
@@ -15,6 +15,6 @@ import org.springframework.stereotype.Service;
  * @since 2022/03/14 13:43
  */
 @Service
-public class EmployeeRemoveServiceImpl extends ServiceImpl<EmployeeRemoveMapper, EmployeeRemove> implements EmployeeRemoveService {
+public class EmployeeRemoveServiceImpl extends ServiceImpl<EmployeeRemoveMapper, EmployeeRemove> implements IEmployeeRemoveService {
 
 }
